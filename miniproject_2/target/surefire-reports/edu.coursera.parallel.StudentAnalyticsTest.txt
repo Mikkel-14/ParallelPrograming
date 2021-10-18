@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: edu.coursera.parallel.StudentAnalyticsTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 2, Errors: 2, Skipped: 0, Time elapsed: 2.496 sec <<< FAILURE! - in edu.coursera.parallel.StudentAnalyticsTest
+testCountNumberOfFailedStudentsOlderThan20(edu.coursera.parallel.StudentAnalyticsTest)  Time elapsed: 0.205 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+	at edu.coursera.parallel.StudentAnalytics.countNumberOfFailedStudentsOlderThan20ParallelStream(StudentAnalytics.java:172)
+	at edu.coursera.parallel.StudentAnalyticsTest.countNumberOfFailedStudentsOlderThan20Helper(StudentAnalyticsTest.java:139)
+	at edu.coursera.parallel.StudentAnalyticsTest.testCountNumberOfFailedStudentsOlderThan20(StudentAnalyticsTest.java:155)
+
+testMostCommonFirstNameOfInactiveStudents(edu.coursera.parallel.StudentAnalyticsTest)  Time elapsed: 0.389 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: Mismatch in calculated values expected:<[John]> but was:<[Optional[Yunming]]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at edu.coursera.parallel.StudentAnalyticsTest.mostCommonFirstNameOfInactiveStudentsHelper(StudentAnalyticsTest.java:97)
+	at edu.coursera.parallel.StudentAnalyticsTest.testMostCommonFirstNameOfInactiveStudents(StudentAnalyticsTest.java:112)
+
+testMostCommonFirstNameOfInactiveStudentsPerf(edu.coursera.parallel.StudentAnalyticsTest)  Time elapsed: 0.978 sec  <<< FAILURE!
+junit.framework.ComparisonFailure: Mismatch in calculated values expected:<[John]> but was:<[Optional[Yunming]]>
+	at junit.framework.Assert.assertEquals(Assert.java:81)
+	at edu.coursera.parallel.StudentAnalyticsTest.mostCommonFirstNameOfInactiveStudentsHelper(StudentAnalyticsTest.java:97)
+	at edu.coursera.parallel.StudentAnalyticsTest.testMostCommonFirstNameOfInactiveStudentsPerf(StudentAnalyticsTest.java:120)
+
+testCountNumberOfFailedStudentsOlderThan20Perf(edu.coursera.parallel.StudentAnalyticsTest)  Time elapsed: 0.271 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+	at edu.coursera.parallel.StudentAnalytics.countNumberOfFailedStudentsOlderThan20ParallelStream(StudentAnalytics.java:172)
+	at edu.coursera.parallel.StudentAnalyticsTest.countNumberOfFailedStudentsOlderThan20Helper(StudentAnalyticsTest.java:139)
+	at edu.coursera.parallel.StudentAnalyticsTest.testCountNumberOfFailedStudentsOlderThan20Perf(StudentAnalyticsTest.java:163)
+
